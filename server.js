@@ -26,4 +26,4 @@ http.createServer(function (req, res) {
     proxy.web(req, res, {
         target: req.url
     });
-}).listen(80);
+}).listen(process.env.PORT);
