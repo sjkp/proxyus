@@ -1,0 +1,9 @@
+Fri Apr 18 2014 10:54:54 GMT+0200 (CEST):
+{ [TypeError: Object #<Object> has no method 'helpInformation']
+  stack: [Getter/Setter],
+  __frame: undefined,
+  rawStack: [Getter] }
+TypeError: Object #<Object> has no method 'helpInformation'
+    at Object.deploymentScriptExecute (/usr/local/lib/node_modules/azure-cli/node_modules/kuduscript/bin/kuduscript.js:46:13)
+    at __3 (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/site._js:187:25)
+
