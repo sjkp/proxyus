@@ -17,13 +17,15 @@ proxy.on('error', function(err){
     console.log(err);
 })
 
-
+console.log(process.env.PORT || 3000);
 //
 // Create your target server
 //
 http.createServer(function (req, res) {
     console.log(req.url);
-    proxy.web(req, res, {
+    res.write('hello world');
+    res.end();
+   /* proxy.web(req, res, {
         target: req.url
-    });
-}).listen(process.env.PORT);
+    });*/
+}).listen(process.env.PORT || 3000);
