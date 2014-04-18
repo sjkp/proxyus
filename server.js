@@ -23,9 +23,9 @@ console.log(process.env.PORT || 3000);
 //
 http.createServer(function (req, res) {
     console.log(req.url);
-    res.write('hello world');
-    res.end();
-   /* proxy.web(req, res, {
+    /*res.write('hello world');
+    res.end();*/
+   proxy.web(req, res, {
         target: req.url
-    });*/
+    });
 }).listen(process.env.PORT || 3000);
